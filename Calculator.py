@@ -1,11 +1,26 @@
-print('Hello World! \n')
-print('Sorry for late but this how hereos appears \n')
-print("Don't worry YouPu is here now there is nothing to worry about anymore \n")
-answer = input("Do you need a calculator \n")
-if answer == "Yes" or answer == "yes" :
-    print("Welcome to YouPu Calculator")
+print("Hello! this is your math assistant")
+answer = input("How can I help you today here are what I can do \n 1:addition \n 2:subtraction \n 3:multipltion \n 4:division \n 5:peverity \n")
+if answer == "1" :
+    x = int(input("What's X: "))
+    y = int(input("What's Y: "))
+    print(x+y)
+elif answer == "2" :
+    x = int(input("What's X: "))
+    y = int(input("What's Y: "))
+    print(x-y)
+elif answer == "3" :
+    x = int(input("What's X: "))
+    y = int(input("What's Y: "))
+    print(x*y)
+elif answer == "4" :
+    x = int(input("What's X: "))
+    y = int(input("What's Y: "))
+    print(x/y)
+elif answer == "5" :
+    x = int(input("What's the number: "))
+    if x % 2 == 0 :
+        print('ODD')
+    else:
+        print('EVEN')
 else:
-    print("then this not what you wanna use see later friend")
-    name = input("What's your name btw \n")
-    email = input(f"Nice to meet you {name}, let me have your email so I can text you and know what you are intrested about and make it for u in the future")
-    print(f"Got it {name}, I will text you in this {email}, if I'am still alive, See you...")
+    print("Please select numbers from 1 -----> 5 only based on what you want assist in ")
